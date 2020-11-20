@@ -94,6 +94,19 @@ section#prodotti .row .sez-1-scritte{
   padding-top: 25px;
 }
 
+section#prodotti .row .sez-1-scritte p:first-child{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section#prodotti .row .sez-1-scritte p:last-of-type{
+  font-size: 30px;
+}
+
+section#prodotti .row .sez-1-scritte a{
+  font-size: 30px;
+}
+
 section#prodotti .row [class*="col-"] img{
   height: 60%;
 }
@@ -106,16 +119,11 @@ section#steps{
 }
 
 section#steps .container{
-  height: 600px;
+  height: 400px;
 }
 
-section#steps .container .marciapiede{
-  height: 55%;
-  width: 100%;
-}
-
-section#steps .container .scritte-sez-2{
-  height: 45%;
+section#steps .container .scritte-sez-2 .row div{
+  margin-top: 80%;
 }
 /* SEZIONE 2 */
 
@@ -123,10 +131,24 @@ section#steps .container .scritte-sez-2{
 section#mobility .container{
   background-image: url('../img/mobility.jpg');
   background-size: cover;
+  margin-top: 200px;
 }
 
 section#mobility .row{
   height: 600px;
+  text-align: center;
+  position: relative;
+}
+
+section#mobility .row div{
+
+}
+
+.scritte-sez-3{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
 }
 /* SEZIONE 3*/
 
