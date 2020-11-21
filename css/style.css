@@ -81,7 +81,6 @@ ul.navbar-language :not(li:last-child) a {
 /* MAIN */
 /* SEZIONE 1 */
 section#prodotti .row{
-  height: 600px;
   text-align: center;
 }
 
@@ -108,22 +107,32 @@ section#prodotti .row .sez-1-scritte a{
 }
 
 section#prodotti .row [class*="col-"] img{
-  height: 60%;
+  height: 400px;
 }
 /* SEZIONE 1 */
 
 /* SEZIONE 2 */
 section#steps{
   background-image: url('../img/marciapiede.jpg');
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
 }
 
-section#steps .container{
-  height: 400px;
+section#steps .container .scritte-sez-2{
+  position: relative;
 }
 
 section#steps .container .scritte-sez-2 .row div{
-  margin-top: 80%;
+  padding-top: 450px;
+}
+
+section#steps .container .scritte-sez-2 img{
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /* SEZIONE 2 */
 
@@ -131,56 +140,143 @@ section#steps .container .scritte-sez-2 .row div{
 section#mobility .container{
   background-image: url('../img/mobility.jpg');
   background-size: cover;
-  margin-top: 200px;
-}
-
-section#mobility .row{
-  height: 600px;
-  text-align: center;
-  position: relative;
+  height: 500px;
+  margin-top: 50px;
 }
 
 section#mobility .row div{
+  text-align: center;
+}
 
+/* section#mobility .row .scritte-sez-3 p, section#mobility .row .scritte-sez-3 a{
+  width: 60%;
+  text-align: center;
+} */
+
+section#mobility .row .scritte-sez-3 p:first-child{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+section#mobility .row .scritte-sez-3 p:last-of-type{
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+section#mobility .row .scritte-sez-3 a{
+  font-size: 20px;
+  color: white;
 }
 
 .scritte-sez-3{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  padding: 150px 0;
   color: white;
 }
 /* SEZIONE 3*/
 
 /* SEZIONE 4 */
 section#app .row{
-  height: 600px;
   padding: 25px 0;
 }
 
 section#app .row div:first-of-type{
   background-color: rgb(42, 52, 130);
-  height: 100%;
-  width: 49%;
+  height: 500px;
+  text-align: center;
+  position: relative;
+  color: white;
+  padding: 25px 0;
+}
+
+section#app .row div:first-of-type p:first-child{
+  font-size: 40px;
+  font-weight: bold;
+  padding: 30px 0 15px;
+}
+
+section#app .row div:first-of-type p:last-of-type{
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+section#app .row div:first-of-type a{
+  font-size: 25px;
+  color: white;
+}
+
+section#app .row div:first-of-type img{
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 section#app .row div:last-of-type{
   background-image: url('../img/lago.jpg');
   background-size: cover;
-  height: 100%;
-  width: 49%;
+  height: 500px;
   float: right;
+  text-align: center;
+  color: white;
+  padding: 25px 0;
+}
+
+section#app .row div:last-of-type p:first-child{
+  font-size: 40px;
+  font-weight: bold;
+  padding: 30px 0 15px;
+  text-shadow: 5px 5px black;
+}
+
+section#app .row div:last-of-type p:last-of-type{
+  font-size: 25px;
+  padding-bottom: 15px;
+  text-shadow: 2px 2px black;
+}
+
+section#app .row div:last-of-type a{
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 /* SEZIONE 4 */
 
 /* SEZIONE 5 */
-section#mobility .container{
-  background-image: url('../img/mobility.jpg');
+section#family{
+  background-image: url('../img/collage.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
 }
 
-section#family .row{
-  height: 600px;
+section#family .container{
+  height: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.social-sez-5{
+  background-color: white;
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px 0;
+}
+
+.social-sez-5 p{
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+.social-sez-5 p i{
+  padding: 0 25px;
 }
 /* SEZIONE 5 */
 /* MAIN */
@@ -188,6 +284,54 @@ section#family .row{
 /* FOOTER */
 footer{
   background-color: rgb(30, 30, 34);
-  height: 600px;
+  color: white;
+}
+
+section#footer-sez-1 .row{
+  padding: 70px 0 40px;
+}
+
+section#footer-sez-1 .row div{
+  padding: 20px 0;
+}
+
+section#footer-sez-1 h2, section#footer-sez-1 h3{
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+section#footer-sez-1 a{
+  padding-top: 20px;
+  display: block;
+  color: white;
+  padding-left: 20px;
+}
+
+section#footer-sez-2 .row{
+  padding: 40px 0 40px;
+}
+
+section#footer-sez-2 .row div{
+  padding: 20px 0;
+}
+
+section#footer-sez-2 h3{
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+section#footer-sez-2 i{
+  font-size: 30px;
+  padding-left: 15px;
+}
+
+section#footer-sez-3{
+  padding: 40px 0 40px;
+  text-align: center;
+}
+
+section#footer-sez-3 img{
+  width: 200px;
+  padding: 0 10px;
 }
 /* FOOTER */
